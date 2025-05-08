@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nama');
             $table->string('email', 64)->unique();
             $table->enum('role', [0, 1, 2])->default(0);
-            $table->boolean('status');
+            $table->tinyInteger('status')->default(1);
             $table->string('password');
             $table->string('hp');
             $table->string('foto')->nullable();
