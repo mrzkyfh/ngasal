@@ -35,5 +35,12 @@ class DatabaseSeeder extends Seeder
             'hp' => "080000000986",
             'password' => bcrypt('p@55word'),
         ]);
+        
+    
+        $this->call([
+            UserSeeder::class,
+        ]);
+        
+            
     }
 }
