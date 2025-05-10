@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\User;
 use Illuminate\Database\Seeder;
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,20 +20,20 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         User::create([
-            'nama' => 'Administrasi',
+            'name' => 'Administrasi',
             'email' => 'admin@gmail.com',
             'role' => '1',
             'status' => 1,
-            'hp' => '08976923623',
+            'hp' => '12345678901',
             'password' => bcrypt('password'),
         ]);
 
          User::create([
-            'nama' => 'kiki',
+            'name' => 'kiki',
             'email' => 'amin@gmail.com',
             'role' => '0',
             'status' => 1,
-            'hp' => '08656923623',
+            'hp' => '23456789010',
             'password' => bcrypt('password'),
         ]);
     }
