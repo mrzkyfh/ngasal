@@ -9,11 +9,17 @@
 <body>
     <a href="{{ route('backend.beranda') }}">Beranda</a> |
     <a href="#">User</a> |
-    <a href="#">Keluar</a>
+    <a href="" onclick="event.preventDefault(); document.getElementById('keluar-app').submit();">Keluar</a>
     <p></p>
 
     <!-- @yieldAwal -->
     @yield('content')
     <!-- @yieldAkhir-->
+
+    <!-- keluarApp -->
+    <form id="keluar-app" action="{{ route('backend.login') }}" method="POST" class="dnone"></form>
+    @csrf
+    </form>
+    <!-- keluarAppEnd -->
 </body>
 </html>
