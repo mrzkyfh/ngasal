@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon.png')}}">
     <title>Matrix Template - The Ultimate Multipurpose admin template</title>
     <!-- Custom CSS -->
     <link href="{{ asset('backend/dist/css/style.min.css') }}" rel="stylesheet">
@@ -42,7 +42,7 @@
             <div class="auth-box bg-dark border-top border-secondary">
                 <div id="loginform">
                     <div class="text-center p-t-20 p-b-20">
-                        <span class="db"><img src="assets/images/logo.png" alt="logo" /></span>
+                        <span class="db"><img src="{{asset('Backend/image/logo.png')}}" alt="logo" /></span>
                     </div>
                     <!-- Form -->
                     <form class="form-horizontal m-t-20" id="loginform" action="index.html">
@@ -119,10 +119,10 @@
     <!-- ============================================================== -->
     <!-- All Required js -->
     <!-- ============================================================== -->
-    <script src="{{assets('backend/libs/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{asset('backend/libs/jquery/dist/jquery.min.js')}}"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="{{assets('backend/libs/popper.js/dist/umd/popper.min.js')}}"></script>
-    <script src="{{assets('backend/libs/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('backend/libs/popper.js/dist/umd/popper.min.js')}}"></script>
+    <script src="{{asset('backend/libs/bootstrap/dist/js/bootstrap.min.js')}}"></script>
     <!-- ============================================================== -->
     <!-- This page plugin js -->
     <!-- ============================================================== -->
